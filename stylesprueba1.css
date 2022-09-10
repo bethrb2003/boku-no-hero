@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #AD2508;
+    font-family: 'Space Mono', monospace;
+}
+
+nav {
+    position: fixed;
+    background-color: #AD2508;
+    height: 80px;
+    width: 100%;
+    position: fi;
+}
+
+.logo {
+    height: 50px;
+    margin: 10px
+}
+.boton {
+    float: right;
+    margin: 27px 10px;
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    background-color: #FDD835;
+    border-color: #F1C40F;
+    color: #861f08;
+    font-family: 'Space Mono', monospace;
+}
+.boton:hover {
+    background-color: #d5ac0a;
+    border-color: #c29d07;
+    box-shadow: 5px 5px 3px black;
+}
+
+.enlaces {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #F1C40F;
+    font-size: 30px;
+    padding: 7px 13px;
+}
+
+li a.active, li a:hover {
+    background-color: #f9dd5f;
+    color: black;
+    transition: .5s;
+}
+
+.toggle {
+    float: right;
+    color: #F1C40F;
+    margin: 30px 20px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    transition: 3s;
+    display: none
+}
+
+.rotar {
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+@media (max-width: 910px){
+    .toggle {
+        display: block
+    }
+    .enlaces {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #AD2508;
+        text-align: center;
+        overflow: hidden;
+        height: calc(100vh - 80px);
+        width: 100%;
+        z-index: -1;
+        top: -100vh;
+        transition: 1s;
+    }
+    .boton {
+        height: 50px ;
+        font-size: 30px;  
+    }
+    
+    .active{
+        top: 80px;
+    }
+    nav ul li:hover {
+        background-color: #f9dd5f;
+        color: black
+    }
+
+}
+
+.espacio {
+    height: 80px;
+}
+
+header {
+    background-image: url(fotoheader.png);
+    height: 500px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 6rem;
+    font-family: 'Bangers', cursive;
+    color: #F1C40F;
+    text-shadow: 0 0 0.2em #d22f0b
+
+}
+
+.seccion-resumen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.contenedor {
+    background-color: #F1C40F;
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #FDD835;
+}
+
+.titulos {
+    background-color: #AD2508;
+    box-shadow: 0px 0px 30px #d22f0b;
+    margin: 30px 0 30px;
+    display: grid;
+    place-items: center;
+    height: 70px;
+    width: 90%;
+    display: grid;
+    place-items: center;
+
+}
+
+.titulos h2 {
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    font-size: 44px;
+    color: white;
+    text-shadow: 0 0 0.2em #FDD835
+}
+
+.descripcion {
+    width: 83%;
+}
+
+.descripcion p {
+    text-align: justify;
+    font-size: 30px;
+    color: black;
+}
+
+.tabla-informacion {
+    width: 90%;
+}
+
+table,
+th,
+td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-size: 30px;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.seccion-personajes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.personajes-principales {
+    background-color: #F1C40F;
+    width: 100%;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px #FDD835;
+    display: grid;
+    place-items: center;
+}
+
+.titulos-personajes {
+    background-color: #AD2508;
+    box-shadow: 0px 0px 30px #d22f0b;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.titulos-personajes h2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Rampart One', cursive;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 0.2em #FDD835;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.tarjeta-de-personaje {
+    cursor: pointer;
+    height: 500px;
+    background: #AD2508;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px #d22f0b;
+}
+
+.izuku {
+    width: 175px;
+}
+
+.katsuki {
+    width: 175px;
+}
+
+.shoto {
+    width: 135px;
+}
+
+.toshinori {
+    width: 240px;
+}
+
+.cajaFoto {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    background-color: #F1C40F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nombre-personaje {
+    background-color: #F1C40F;
+    border-radius: 10px;
+    height: 50px;
+    width: 300px;
+    margin: 10px;
+}
+
+.nombre-personaje p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+    color: black;
+    text-shadow: 0 0 0.2em #FDD835
+}
+
+input {
+    display: none;
+}
+
+input:hover+label {
+    background-color: #861f08;
+}
+
+.footer {
+    height: 100px;
+}
