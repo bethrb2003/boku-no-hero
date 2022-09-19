@@ -26,10 +26,10 @@ class personaje {
     }
 }
 
-let izukuMidoriya = new personaje('Izuku Midoriya', './izuku.png', 'izuku')
-let katsukiBakugo = new personaje('Katsuki Bakugo', './katsuki.png', 'katsuki')
-let shotoTodoroki = new personaje('Shoto Todoroki', './shoto.png', 'shoto')
-let toshinoriYagi = new personaje('Toshinori Yagi', './toshinori.png', 'toshinori')
+let izukuMidoriya = new personaje('Izuku Midoriya', './assets/izuku.png', 'izuku')
+let katsukiBakugo = new personaje('Katsuki Bakugo', './assets/katsuki.png', 'katsuki')
+let shotoTodoroki = new personaje('Shoto Todoroki', './assets/shoto.png', 'shoto')
+let toshinoriYagi = new personaje('Toshinori Yagi', './assets/toshinori.png', 'toshinori')
 
 personajes.push(izukuMidoriya, katsukiBakugo, shotoTodoroki, toshinoriYagi)
 

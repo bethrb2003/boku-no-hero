@@ -120,7 +120,7 @@ li a.active, li a:hover {
 }
 
 header {
-    background-image: url(fotoheader.png);
+    background-image: url(assets/fotoheader.png);
     height: 500px;
     width: 100%;
     display: grid;
@@ -142,6 +142,30 @@ header h1 {
     align-items: center;
     width: 100%;
 }
+
+.contenedor-episodios {
+    margin-top: 20px;
+    width: 80%;
+    background-color: #F1C40F;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 30px #FDD835;
+}
+.tabla-episodios {
+    width: 90%;
+}
+
+.contenedor-episodios img {
+    width: 250px;
+}
+.td-img {
+    padding: 0%;
+    padding-top: 10px;
+}
+
 
 .contenedor {
     background-color: #F1C40F;
