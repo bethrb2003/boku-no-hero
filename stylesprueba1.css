@@ -144,14 +144,14 @@ header h1 {
 }
 
 .contenedor-episodios {
-    margin-top: 20px;
-    width: 80%;
     background-color: #F1C40F;
+    width: 80%;
+    margin-top: 20px;
     padding: 20px;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 10px;
     box-shadow: 0px 0px 30px #FDD835;
 }
 .tabla-episodios {
@@ -160,12 +160,12 @@ header h1 {
 
 .contenedor-episodios img {
     width: 100%;
+    height: 150px;
 }
 .td-img {
     padding: 0%;
     padding-top: 10px;
 }
-
 
 .contenedor {
     background-color: #F1C40F;
@@ -187,15 +187,12 @@ header h1 {
     place-items: center;
     height: 70px;
     width: 90%;
-    display: grid;
-    place-items: center;
-
 }
 
 .titulos h2 {
     text-align: center;
     font-family: 'Rampart One', cursive;
-    font-size: 44px;
+    font-size: 35px;
     color: white;
     text-shadow: 0 0 0.2em #FDD835
 }
