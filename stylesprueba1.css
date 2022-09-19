@@ -159,7 +159,7 @@ header h1 {
 }
 
 .contenedor-episodios img {
-    width: 250px;
+    width: 100%;
 }
 .td-img {
     padding: 0%;
